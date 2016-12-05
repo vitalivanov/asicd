@@ -37,6 +37,14 @@ func (svcHdlr AsicDaemonServiceHandler) GetBulkAsicGlobalState(currMarker, count
 	return nil, nil
 }
 
+func (svcHdlr AsicDaemonServiceHandler) GetAsicSummaryState(moduleId int8) (*asicdServices.AsicSummaryState, error) {
+	return nil, nil
+}
+
+func (svcHdlr AsicDaemonServiceHandler) GetBulkAsicSummaryState(currMarker, count asicdServices.Int) (*asicdServices.AsicSummaryStateGetInfo, error) {
+	return nil, nil
+}
+
 func (svcHdlr AsicDaemonServiceHandler) CreateAsicGlobalPM(obj *asicdServices.AsicGlobalPM) (bool, error) {
 	return true, nil
 }
